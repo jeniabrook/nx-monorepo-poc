@@ -48,6 +48,12 @@ importers:
       typescript: 4.9.3
       ui: link:../../packages/ui
 
+  packages/logger:
+    specifiers:
+      typescript: 4.9.3
+    devDependencies:
+      typescript: 4.9.3
+
   packages/ui:
     specifiers:
       '@types/react': 18.0.25
