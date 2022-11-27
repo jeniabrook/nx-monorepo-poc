@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>This is another app</h1>
+        <h1>This is another app - update</h1>
         <Button onClick={() => console.log("Pow!")}>Click me</Button>
       </main>
 
