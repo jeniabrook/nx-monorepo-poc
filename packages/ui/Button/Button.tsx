@@ -1,4 +1,5 @@
 import React from "react";
+import { log } from "logger";
 
 interface ButtonProps {
   children?: React.ReactNode;
@@ -6,5 +7,6 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, onClick }: ButtonProps) => {
+  log("Hi");
   return <button onClick={onClick}>{children}</button>;
 };

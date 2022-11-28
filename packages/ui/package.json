@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "logger": "workspace:*",
     "react": "18.2.0"
   },
   "devDependencies": {
