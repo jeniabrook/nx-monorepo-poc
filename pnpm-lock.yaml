@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      nx: ^15.2.1
+      nx: 15.2.1
     devDependencies:
       nx: 15.2.1
 
@@ -13,12 +13,12 @@ importers:
       '@types/node': 18.11.9
       '@types/react': 18.0.25
       '@types/react-dom': 18.0.9
-      logger: workspace:^1.0.0
+      logger: workspace:*
       next: 13.0.5
       react: 18.2.0
       react-dom: 18.2.0
       typescript: 4.9.3
-      ui: workspace:^1.0.0
+      ui: workspace:*
     dependencies:
       '@types/node': 18.11.9
       '@types/react': 18.0.25
@@ -36,7 +36,7 @@ importers:
       '@types/react': 18.0.25
       '@types/react-dom': 18.0.9
       next: 13.0.5
-      next-transpile-modules: ^10.0.0
+      next-transpile-modules: 10.0.0
       react: 18.2.0
       react-dom: 18.2.0
       typescript: 4.9.3
