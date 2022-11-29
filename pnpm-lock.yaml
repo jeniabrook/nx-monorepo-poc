@@ -6,10 +6,12 @@ importers:
     specifiers:
       '@nrwl/nx-cloud': ^15.0.2
       nx: ^15.2.1
+      prettier: ^2.8.0
     dependencies:
       '@nrwl/nx-cloud': 15.0.2
     devDependencies:
       nx: 15.2.1
+      prettier: 2.8.0
 
   apps/backoffice:
     specifiers:
@@ -1031,6 +1033,12 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: false
+
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /proxy-from-env/1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
