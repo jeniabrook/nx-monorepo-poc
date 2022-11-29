@@ -9,23 +9,23 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-      - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v3
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-      - uses: nrwl/nx-set-shas@v3
-      - name: Install dependencies
-      - run: pnpm install
+        fetch-depth: 0
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 7
+    - name: Use Node.js ${{ matrix.node-version }}
+    uses: actions/setup-node@v3
+    with:
+      node-version: ${{ matrix.node-version }}
+      cache: 'pnpm'
+    - uses: nrwl/nx-set-shas@v3
+    - name: Install dependencies
+    - run: pnpm install
 
-      - run: npx nx workspace-lint
-      - run: npx nx format:check
-      - run: npx nx affected --target=lint --parallel=3
-      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+    - run: npx nx workspace-lint
+    - run: npx nx format:check
+    - run: npx nx affected --target=lint --parallel=3
+    - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
+    - run: npx nx affected --target=build --parallel=3
