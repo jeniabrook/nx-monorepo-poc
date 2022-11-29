@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>My Cool button from a shared UI lib - Let's see how it rolls</h1>
+        <h1>My Cool button from a shared UI lib - Update</h1>
         <Button onClick={() => console.log("Yay!")}>Click Me</Button>
       </main>
 
