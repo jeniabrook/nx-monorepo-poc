@@ -1,4 +1,4 @@
-name: CI
+name: CI (build, test, lint)
 on:
   push:
     branches:
@@ -6,13 +6,15 @@ on:
   pull_request:
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [16]
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: pnpm/action-setup@v2
         with:
           version: 7
