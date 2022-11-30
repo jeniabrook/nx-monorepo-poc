@@ -7,14 +7,14 @@ importers:
       '@nrwl/nx-cloud': ^15.0.2
       '@nrwl/workspace': ^15.2.3
       '@vercel/remote-nx': ^1.0.1
-      nx: ^15.2.1
+      nx: ^15.2.3
       prettier: ^2.8.0
     dependencies:
       '@nrwl/nx-cloud': 15.0.2
     devDependencies:
       '@nrwl/workspace': 15.2.3_prettier@2.8.0
       '@vercel/remote-nx': 1.0.1_@nrwl+workspace@15.2.3
-      nx: 15.2.1
+      nx: 15.2.3
       prettier: 2.8.0
 
   apps/backoffice:
@@ -788,16 +788,6 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@nrwl/cli/15.2.1:
-    resolution: {integrity: sha512-ufBJ5o3WCixdp6/TPkpn4rH3QBFJcqCMG1d14A/SvAkEnXu3vWlj3E+4GXf3CK+sGNjjf3ZGoNm7OFV+/Ml4GA==}
-    dependencies:
-      nx: 15.2.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-    dev: true
-
   /@nrwl/cli/15.2.3:
     resolution: {integrity: sha512-SUBTVl3/MKsE01x+4OaxZ6r4Mc6vshgU9xoSz6c4P23pvkMXsmVrFh8u2GcNS7/y5SvNWynzP61nLCXPPlO42w==}
     dependencies:
@@ -815,7 +805,7 @@ packages:
     dependencies:
       '@phenomnomnominal/tsquery': 4.1.1
       ejs: 3.1.8
-      ignore: 5.2.0
+      ignore: 5.2.1
       nx: 15.2.3
       semver: 7.3.4
       tslib: 2.4.1
@@ -888,17 +878,6 @@ packages:
       - debug
     dev: false
 
-  /@nrwl/tao/15.2.1:
-    resolution: {integrity: sha512-6ApglWKORasLhtjlJmqo2co/UexSSiD7mWVxT2886oKG2Y/T/5RnPFNhJgGnKJIURCNMxiSKhq7GAA+CE9zRZg==}
-    hasBin: true
-    dependencies:
-      nx: 15.2.1
-    transitivePeerDependencies:
-      - '@swc-node/register'
-      - '@swc/core'
-      - debug
-    dev: true
-
   /@nrwl/tao/15.2.3:
     resolution: {integrity: sha512-er7VBy+NAOmQU16Od9rAkktpfhidn6lIK+eVRJIitTZAC8thT7MwqZRZVyLJiGE1iHs3h9EOs6LyCJpASqucjA==}
     hasBin: true
@@ -932,7 +911,7 @@ packages:
       flat: 5.0.2
       fs-extra: 10.1.0
       glob: 7.1.4
-      ignore: 5.2.0
+      ignore: 5.2.1
       minimatch: 3.0.5
       npm-run-path: 4.0.1
       nx: 15.2.3
@@ -1094,7 +1073,7 @@ packages:
     resolution: {integrity: sha512-K6aVZox16D/mK6awdP/DnsdgI34B/+Pg6IdOoZudl/jcDNOmXJQYdsL3SWOgQndeBmt19SSR2LTuytOjE6tTCw==}
     dependencies:
       '@vercel/remote': 1.0.1
-      chalk: 4.1.0
+      chalk: 4.1.2
       nx-remotecache-custom: 2.0.0_@nrwl+workspace@15.2.3
     transitivePeerDependencies:
       - '@nrwl/workspace'
@@ -1328,7 +1307,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001434
+      caniuse-lite: 1.0.30001435
       electron-to-chromium: 1.4.284
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1373,6 +1352,11 @@ packages:
 
   /caniuse-lite/1.0.30001434:
     resolution: {integrity: sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==}
+    dev: false
+
+  /caniuse-lite/1.0.30001435:
+    resolution: {integrity: sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==}
+    dev: true
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -1389,6 +1373,14 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  /chalk/4.1.2:
+    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
+    engines: {node: '>=10'}
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+    dev: true
 
   /char-regex/1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
@@ -1908,8 +1900,8 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
 
-  /ignore/5.2.0:
-    resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
+  /ignore/5.2.1:
+    resolution: {integrity: sha512-d2qQLzTJ9WxQftPAuEQpSPmKqzxePjzVbpAVv62AQ64NTL+wR4JkrVqR/LqFsFEUsHDAiId52mJteHDFuDkElA==}
     engines: {node: '>= 4'}
     dev: true
 
@@ -2709,61 +2701,9 @@ packages:
       '@nrwl/workspace': '>=9.2.2'
     dependencies:
       '@nrwl/workspace': 15.2.3_prettier@2.8.0
-      chalk: 4.1.0
+      chalk: 4.1.2
       dotenv: 8.6.0
-      tar: 6.1.11
-    dev: true
-
-  /nx/15.2.1:
-    resolution: {integrity: sha512-vVeT5D02cDDiSmS3P2Bos/waYQa3m0yl/rouzsKpusVSmzAQGQbKXhxPb4WnNIj8Iz/8KjFeBM/RZO021BtGNg==}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@swc-node/register': ^1.4.2
-      '@swc/core': ^1.2.173
-    peerDependenciesMeta:
-      '@swc-node/register':
-        optional: true
-      '@swc/core':
-        optional: true
-    dependencies:
-      '@nrwl/cli': 15.2.1
-      '@nrwl/tao': 15.2.1
-      '@parcel/watcher': 2.0.4
-      '@yarnpkg/lockfile': 1.1.0
-      '@yarnpkg/parsers': 3.0.0-rc.31
-      '@zkochan/js-yaml': 0.0.6
-      axios: 1.2.0
-      chalk: 4.1.0
-      chokidar: 3.5.3
-      cli-cursor: 3.1.0
-      cli-spinners: 2.6.1
-      cliui: 7.0.4
-      dotenv: 10.0.0
-      enquirer: 2.3.6
-      fast-glob: 3.2.7
-      figures: 3.2.0
-      flat: 5.0.2
-      fs-extra: 10.1.0
-      glob: 7.1.4
-      ignore: 5.2.0
-      js-yaml: 4.1.0
-      jsonc-parser: 3.2.0
-      minimatch: 3.0.5
-      npm-run-path: 4.0.1
-      open: 8.4.0
-      semver: 7.3.4
-      string-width: 4.2.3
-      strong-log-transformer: 2.1.0
-      tar-stream: 2.2.0
-      tmp: 0.2.1
-      tsconfig-paths: 3.14.1
-      tslib: 2.4.1
-      v8-compile-cache: 2.3.0
-      yargs: 17.6.2
-      yargs-parser: 21.1.1
-    transitivePeerDependencies:
-      - debug
+      tar: 6.1.12
     dev: true
 
   /nx/15.2.3:
@@ -2798,7 +2738,7 @@ packages:
       flat: 5.0.2
       fs-extra: 10.1.0
       glob: 7.1.4
-      ignore: 5.2.0
+      ignore: 5.2.1
       js-yaml: 4.1.0
       jsonc-parser: 3.2.0
       minimatch: 3.0.5
@@ -3273,6 +3213,19 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+    dev: false
+
+  /tar/6.1.12:
+    resolution: {integrity: sha512-jU4TdemS31uABHd+Lt5WEYJuzn+TJTCBLljvIAHZOz6M9Os5pJ4dD+vRFLxPa/n3T0iEFzpi+0x1UfuDZYbRMw==}
+    engines: {node: '>=10'}
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 3.3.6
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
+    dev: true
 
   /terminal-link/2.1.1:
     resolution: {integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==}
