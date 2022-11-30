@@ -8,5 +8,9 @@ interface ButtonProps {
 
 export const Button = ({ children, onClick }: ButtonProps) => {
   log("Hi");
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button style={{ backgroundColor: "hotpink" }} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
