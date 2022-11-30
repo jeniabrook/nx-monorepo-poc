@@ -4,7 +4,6 @@
       "runner": "@vercel/remote-nx",
       "options": {
         "cacheableOperations": ["build"],
-        "cacheDirectory": "/tmp/nx-cache",
         "token": "pcX8jbEsoLGJroSRUkNSnuqT"
       }
     }
