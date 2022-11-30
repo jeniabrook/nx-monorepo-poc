@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nrwl/workspace": "^15.2.3",
+    "@vercel/remote-nx": "^1.0.1",
     "nx": "^15.2.1",
     "prettier": "^2.8.0"
   },

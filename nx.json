@@ -1,40 +1,27 @@
 {
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "@vercel/remote-nx",
       "options": {
-        "cacheableOperations": [
-          "build"
-        ],
-        "accessToken": "MTM1YWI1MzgtZjc2NC00OGNiLWFmMjEtYjA2NTM5ZmU1YzhkfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build"],
+        "cacheDirectory": "/tmp/nx-cache",
+        "token": "pcX8jbEsoLGJroSRUkNSnuqT"
       }
     }
   },
   "namedInputs": {
-    "noMarkdown": [
-      "!{projectRoot}/**/*.md"
-    ]
+    "noMarkdown": ["!{projectRoot}/**/*.md"]
   },
   "targetDefaults": {
     "build": {
-      "inputs": [
-        "noMarkdown",
-        "^noMarkdown"
-      ],
-      "dependsOn": [
-        "^build"
-      ]
+      "inputs": ["noMarkdown", "^noMarkdown"],
+      "dependsOn": ["^build"]
     },
     "dev": {
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "test": {
-      "inputs": [
-        "noMarkdown",
-        "^noMarkdown"
-      ]
+      "inputs": ["noMarkdown", "^noMarkdown"]
     }
   }
 }
