@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>This was update via Vercel Cache with Nx</h1>
+        <h1>This was update via Vercel Cache with Nx - Update</h1>
         <Button onClick={() => console.log("Pow!")}>Click me</Button>
       </main>
 
