@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>My Cool button from a shared UI lib - Don't build locally</h1>
+        <h1>My Cool button from a shared UI lib - Build locally</h1>
         <Button onClick={() => console.log("Yay!")}>Click Me</Button>
       </main>
 
