@@ -6,6 +6,8 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+// Update UI lib
+
 export const Button = ({ children, onClick }: ButtonProps) => {
   log("Hi");
   return (
